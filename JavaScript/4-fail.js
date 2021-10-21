@@ -9,12 +9,12 @@ const fn = (willFail, callback) => {
   }, 0);
 };
 
-fn(false, err => {
+fn(false, (err) => {
   assert.ifError(err); // passes
   // assert.fail(err); // throws
 });
 
-fn(true, err => {
+fn(true, (err) => {
   assert.ifError(err); // throws
   // assert.fail(err); // throws
 });

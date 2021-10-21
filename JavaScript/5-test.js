@@ -2,8 +2,8 @@
 
 const assert = require('assert');
 
-const square = x => x * x;
-const id = x => x;
+const square = (x) => x * x;
+const id = (x) => x;
 
 const value = 10;
 
